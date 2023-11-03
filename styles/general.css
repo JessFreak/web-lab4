@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css?family=Righteous");
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    text-align: center;
+    font-family: sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+.text {
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+
+body {
+    display: grid;
+    grid-template-rows: 1fr 10fr 2fr;
+}
+
+header {
+    color: grey;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header h1 {
+    font-family: 'Righteous', sans-serif;
+    font-weight: lighter;
+    margin-left: 3rem;
+}
+
+header svg:hover {
+    cursor: pointer;
+    opacity: 0.7;
+    transform: scale(1.2);
+}
+
+main {
+    display: grid;
+    padding: 0 16%;
+    background: linear-gradient(#ebc511 36.5%, #13244b 36.5%);
+}
+
+.images, .cards {
+    display: grid;
+    margin: 2rem;
+    grid-template-columns: repeat(4, calc(25% - 15px));
+    grid-gap: 20px;
+}
+
+.images {
+    grid-template-areas:
+        "image1 image2 image3 image4";
+    margin-top: 5rem;
+}
+
+.images div {
+    box-shadow: 5px 5px 20px 0 rgba(0,0,0,0.4);
+    min-height: 306px;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+.image-1 {
+    background-image: url('../images/1.jpg');
+    grid-area: image1;
+    grid-row: 1 / span 3;
+}
+
+.image-2 {
+    background-image: url('../images/2.jpg');
+    grid-area: image2;
+    grid-row: 2 / span 3;
+}
+
+.image-3 {
+    background-image: url('../images/3.jpg');
+    grid-area: image3;
+    grid-row: 1 / span 3;
+}
+
+.image-4 {
+    background-image: url('../images/4.jpg');
+    grid-area: image4;
+    grid-row: 2 / span 3;
+}
+
+.cards {
+    height: fit-content;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 20px 24px;
+    border-radius: 20px;
+    background-color: white;
+}
+
+.card img {
+    max-height: 6rem;
+    max-width: 6rem;
+}
+
+p, a {
+    color: grey;
+}
+
+footer {
+    display: flex;
+    min-height: 12vh;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    background-color: #323232;
+}
+
+p {
+    line-height: 1.6;
+    font-style: italic;
+    margin: 20px 3px 0;
+}
+
+a {
+    letter-spacing: 2px;
+    margin: 20px auto 0;
+}
+
+h3 {
+    letter-spacing: 2px;
+    margin: 20px 2px 0;
+}

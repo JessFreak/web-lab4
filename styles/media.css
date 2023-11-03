@@ -1,0 +1,36 @@
+@media (max-width: 1524px) {
+    main {
+        padding: 0 10%;
+    }
+
+    header h1 {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 1370px) {
+    main {
+        padding: 0 5%;
+    }
+}
+
+@media (max-width: 767px) {
+    body, .images, .cards {
+        display: flex;
+        flex-direction: column;
+    }
+
+    main {
+        background: linear-gradient(#ebc511 30%, #13244b 30%);
+        padding: 0 2% 60px;
+    }
+
+    .images div {
+        height: 420px;
+    }
+
+    footer {
+        padding: 50px 30px;
+        font-size: 0.875rem
+    }
+}
